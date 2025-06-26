@@ -9,12 +9,37 @@
     nav a{color:#fff;padding:10px;display:inline-block;text-decoration:none}
     nav a:hover{background:#111}
 
-    ul {
-      list-style-type: square;
-      padding-left: 20px;
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+      max-width: 1000px;
+      margin: 0 auto;
     }
-    li {
-      margin: 8px 0;
+
+    .card {
+      background-color: white;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.2s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .item-name {
+      font-size: 18px;
+      font-weight: bold;
+      color: #222;
+      margin-bottom: 10px;
+    }
+
+    .item-description {
+      font-size: 14px;
+      color: #555;
     }
   </style>
 </head>
@@ -29,16 +54,40 @@
   
   
   <h1>Welcome to the Dashboard</h1>
-  <ul>
-    <li>Wireless Headphones</li>
-    <li>Smartphone Case</li>
-    <li>Bluetooth Speaker</li>
-    <li>USB-C Charging Cable</li>
-    <li>LED Desk Lamp</li>
-    <li>Portable Power Bank</li>
-    <li>Notebook & Pen Set</li>
-    <li>Reusable Water Bottle</li>
-  </ul>
+  <div class="grid">
+    <div class="card">
+      <div class="item-name">Wireless Headphones</div>
+      <div class="item-description">High-quality sound with noise cancellation.</div>
+    </div>
+    <div class="card">
+      <div class="item-name">Smartphone Case</div>
+      <div class="item-description">Durable and stylish protection for your phone.</div>
+    </div>
+    <div class="card">
+      <div class="item-name">Bluetooth Speaker</div>
+      <div class="item-description">Portable speaker with powerful audio output.</div>
+    </div>
+    <div class="card">
+      <div class="item-name">USB-C Charging Cable</div>
+      <div class="item-description">Fast charging cable compatible with most devices.</div>
+    </div>
+    <div class="card">
+      <div class="item-name">LED Desk Lamp</div>
+      <div class="item-description">Adjustable brightness and modern design.</div>
+    </div>
+    <div class="card">
+      <div class="item-name">Portable Power Bank</div>
+      <div class="item-description">Charge your devices on the go with 10,000mAh capacity.</div>
+    </div>
+    <div class="card">
+      <div class="item-name">Notebook & Pen Set</div>
+      <div class="item-description">Perfect for notes, journaling, or sketching.</div>
+    </div>
+    <div class="card">
+      <div class="item-name">Reusable Water Bottle</div>
+      <div class="item-description">Eco-friendly bottle for hot and cold drinks.</div>
+    </div>
+  </div>
   
   
 </body>
