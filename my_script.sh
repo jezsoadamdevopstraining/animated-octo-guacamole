@@ -4,4 +4,6 @@
 
 echo hi
 
+gh repo list
+
 #exit 1
