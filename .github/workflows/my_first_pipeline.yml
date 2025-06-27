@@ -25,17 +25,6 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v4
 
-      - name: Install GitHub CLI
-        run: |
-          sudo apt update
-          sudo apt install -y gh
-
-      - name: Authenticate with GitHub CLI
-        env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: |
-          echo $GH_TOKEN | gh auth login --with-token
-
       # Runs a single command using the runners shell
       - name: build
         env:
