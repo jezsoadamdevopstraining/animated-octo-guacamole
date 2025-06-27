@@ -2,8 +2,6 @@
 
 #set -e
 
-echo hi
-
-gh repo list
+echo Test
 
 #exit 1

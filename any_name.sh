@@ -1,1 +1,3 @@
-echo second
+echo Build
+
+gh repo list
