@@ -28,7 +28,7 @@ jobs:
       # Runs a single command using the runners shell
       - name: build
         env:
-          GH_TOKEN: ${{ github.token }}
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: ./any_name.sh
 
       # Runs a set of commands using the runners shell
