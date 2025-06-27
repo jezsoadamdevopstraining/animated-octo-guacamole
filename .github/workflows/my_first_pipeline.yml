@@ -30,7 +30,6 @@ jobs:
           sudo apt update
           sudo apt install -y gh
 
-
       - name: Authenticate with GitHub CLI
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -39,6 +38,8 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: build
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: ./any_name.sh
 
       # Runs a set of commands using the runners shell
