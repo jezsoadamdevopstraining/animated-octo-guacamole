@@ -1,3 +1,3 @@
 echo Build
 
-gh repo list > ./webpace/test.html
+gh repo list > ./webpage/test.html
