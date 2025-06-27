@@ -1,4 +1,4 @@
 echo Build
 
-touch ./webpage/test.html
-gh repo list > ./webpage/test.html
+touch ./webpage/cli.html
+gh repo list > ./webpage/cli.html
